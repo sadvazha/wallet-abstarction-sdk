@@ -8,7 +8,7 @@ const ERROR_NO_WALLET = 'ERROR_NO_WALLET'
 class Account {
   public wallet: Wallet | null = null
 
-  public new() {
+  public generate() {
     this.wallet = Wallet.createRandom()
   }
 
