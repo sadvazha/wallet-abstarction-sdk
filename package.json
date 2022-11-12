@@ -1,0 +1,26 @@
+{
+  "name": "wasa-sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": "git@github.com:sadvazha/wasa-sdk.git",
+  "author": "WASA Team",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "publish-lib": "npm run build && npm publish",
+    "publish-beta": "npm run build && npm publish --tag beta",
+    "publish-dryrun": "npm run build && npm publish --dry-run"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
