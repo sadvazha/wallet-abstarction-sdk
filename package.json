@@ -17,9 +17,11 @@
     "publish-dryrun": "npm run build && npm publish --dry-run"
   },
   "dependencies": {
+    "@snapshot-labs/snapshot.js": "^0.4.50",
     "ethers": "^5.7.2"
   },
   "peerDependencies": {
+    "@snapshot-labs/snapshot.js": "^0.4.50",
     "ethers": "^5.7.2"
   },
   "devDependencies": {

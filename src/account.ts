@@ -1,15 +1,20 @@
 import {
+  ethers,
   Wallet,
   TypedDataDomain, TypedDataField
 } from 'ethers'
 
 const ERROR_NO_WALLET = 'ERROR_NO_WALLET'
 
+const RPC = 'https://rpc.gnosischain.com'
+
+export const provider = new ethers.providers.JsonRpcProvider(RPC)
+
 class Account {
   public wallet: Wallet | null = null
 
   public generate() {
-    this.wallet = Wallet.createRandom()
+    this.wallet = (Wallet.createRandom()).connect(provider)
   }
 
   public getAddress(): Promise<string> {
