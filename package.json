@@ -16,11 +16,14 @@
     "publish-beta": "npm run build && npm publish --tag beta",
     "publish-dryrun": "npm run build && npm publish --dry-run"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ethers": "^5.7.2"
+  },
   "peerDependencies": {
     "ethers": "^5.7.2"
   },
   "devDependencies": {
+    "@types/node": "^18.11.9",
     "typescript": "^4.8.4"
   }
 }
